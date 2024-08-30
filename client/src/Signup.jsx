@@ -12,7 +12,7 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    axios.post('http://localhost:3001/register', { userName, address })
+    axios.post('https://openx-api.vercel.app/register', { userName, address })
       .then((response) => {
         setMessage(response.data.message);
         navigate('/login') // Set success message from server response

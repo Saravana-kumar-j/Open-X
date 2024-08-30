@@ -32,7 +32,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:3001/login', { address })
+    axios.post('https://openx-api.vercel.app/login', { address })
       .then((response) => {
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userName', response.data.userName);   // Store userName

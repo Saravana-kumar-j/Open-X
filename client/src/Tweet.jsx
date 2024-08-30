@@ -237,7 +237,7 @@ function Tweet() {
         <div className="row">
           <div
             className="col-md-4"
-            style={{ fontFamily: "Poppins, sans-serif", position: "relative" }}
+            style={{ fontFamily: "Poppins, sans-serif", position: "relative"}}
           >
             <h4
               style={{
