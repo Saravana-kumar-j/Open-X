@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as Constants from './Utils/config';
 import { ethers } from 'ethers';
+import { isMobile } from 'react-device-detect';
 
 function Tweet() {
   const navigate = useNavigate();
@@ -237,7 +238,7 @@ function Tweet() {
         <div className="row">
           <div
             className="col-md-4"
-            style={{ fontFamily: "Poppins, sans-serif", position: "relative"}}
+            style={{ fontFamily: "Poppins, sans-serif", position: "relative", marginTop: isMobile ? "200px" : "0" }}
           >
             <h4
               style={{

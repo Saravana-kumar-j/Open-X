@@ -11,8 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const JWT_SECRET = process.env.JWT_SECRET;
-mongoose.connect(process.env.MONGODB_URI)
+const JWT_SECRET = 'openx_sarky';
+mongoose.connect('mongodb+srv://admin:admin@atlascluster.rklqnjm.mongodb.net/openx')
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('Failed to connect to MongoDB', err));
 
