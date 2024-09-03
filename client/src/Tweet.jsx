@@ -234,11 +234,11 @@ function Tweet() {
         </div>
       )}
   
-      <div className="container mt-5" style={{ marginBottom: "50px" }}>
+      <div className="container mt-5" style={{ marginBottom: "50px"}}>
         <div className="row">
           <div
             className="col-md-4"
-            style={{ fontFamily: "Poppins, sans-serif", position: "relative", marginTop: isMobile ? "200px" : "0" }}
+            style={{ fontFamily: "Poppins, sans-serif", position: "relative", marginTop: isMobile? "700px" : "0"}}
           >
             <h4
               style={{
